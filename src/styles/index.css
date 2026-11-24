@@ -1,0 +1,188 @@
+@import '@fontsource-variable/sora/wght.css';
+@import '@fontsource-variable/instrument-sans/wght.css';
+@import '@fontsource-variable/jetbrains-mono/wght.css';
+@import 'tailwindcss';
+
+/* ───────── Design tokens ───────── */
+:root {
+  --bg: #07111f;
+  --bg-2: #0b1728;
+  --surface: #101f33;
+  --surface-2: #14243a;
+  --accent: #3978d5;
+  --accent-2: #78a9f5;
+  --text: #f1f5fa;
+  --text-2: #94a3b8;
+  --text-3: #7d8ca3; /* brief: #64748B (4.0:1) fails AA for small text; lightened to ~5.9:1 */
+  --border: #1d3048;
+  --danger: #e5786d;
+  --danger-fg: #f0a198;
+
+  --font-display: 'Sora Variable', system-ui, sans-serif;
+  --font-body: 'Instrument Sans Variable', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+
+  --gutter: clamp(1.25rem, 5vw, 3rem);
+  --max: 1240px;
+  --section-y: clamp(5.5rem, 12vw, 10rem);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg2: var(--bg-2);
+  --color-surface: var(--surface);
+  --color-surface2: var(--surface-2);
+  --color-accent: var(--accent);
+  --color-accent2: var(--accent-2);
+  --color-fg: var(--text);
+  --color-fg2: var(--text-2);
+  --color-fg3: var(--text-3);
+  --color-line: var(--border);
+  --color-danger: var(--danger);
+  --color-danger-fg: var(--danger-fg);
+  --font-display: var(--font-display);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+/* ───────── Base ───────── */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  background: var(--bg);
+  color-scheme: dark;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+::selection { background: color-mix(in srgb, var(--accent) 45%, transparent); color: #fff; }
+
+:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ───────── Layout primitives ───────── */
+.wrap { width: 100%; max-width: calc(var(--max) + 2 * var(--gutter)); margin-inline: auto; padding-inline: var(--gutter); }
+.section { padding-block: var(--section-y); position: relative; }
+.section + .section::before {
+  content: ''; position: absolute; top: 0; left: var(--gutter); right: var(--gutter);
+  max-width: var(--max); margin-inline: auto; height: 1px;
+  background: linear-gradient(90deg, var(--border), transparent 70%);
+}
+
+/* ───────── Type ───────── */
+.eyebrow {
+  font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em;
+  color: var(--text-3); display: inline-flex; align-items: center; gap: 0.75rem;
+}
+.eyebrow .idx { color: var(--accent-2); }
+.h-display {
+  font-family: var(--font-display); font-weight: 300; letter-spacing: -0.035em; line-height: 1.04;
+}
+.h-section {
+  font-family: var(--font-display); font-weight: 300; letter-spacing: -0.03em; line-height: 1.08;
+  font-size: clamp(2rem, 1.3rem + 3.2vw, 3.75rem); text-wrap: balance;
+}
+.lead { color: var(--text-2); max-width: 56ch; text-wrap: pretty; }
+.mono { font-family: var(--font-mono); }
+
+/* ───────── Buttons & links ───────── */
+@layer components {
+.btn {
+  position: relative; display: inline-flex; align-items: center; gap: 0.6rem;
+  min-height: 2.9rem; padding: 0 1.35rem; border-radius: 999px;
+  font-weight: 500; font-size: 0.95rem; text-decoration: none; cursor: pointer;
+  transition: transform .35s var(--ease), background-color .25s, border-color .25s, color .25s;
+  border: 1px solid transparent; font-family: inherit;
+}
+.btn svg { transition: transform .35s var(--ease); }
+.btn:hover svg.arrow { transform: translateX(4px); }
+.btn-primary { background: #2f67bd; color: #fff; } /* #3978d5 + white is 4.2:1; this is ~5.6:1 (AA) */
+.btn-primary:hover { background: #3a74cc; transform: translateY(-1px); }
+.btn-ghost { border-color: var(--border); color: var(--text); background: transparent; }
+.btn-ghost:hover { border-color: var(--accent-2); color: var(--accent-2); }
+.link {
+  color: var(--text); text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
+  transition: background-size .4s var(--ease), color .25s;
+}
+.link:hover { background-size: 100% 1px; color: var(--accent-2); }
+}
+
+/* ───────── Hero visual animation (transform/opacity/dash only) ───────── */
+@keyframes flow { to { stroke-dashoffset: -48; } }
+@keyframes pulse { 0%,100% { opacity: .35; } 50% { opacity: 1; } }
+@keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.flow { stroke-dasharray: 3 9; animation: flow 3.2s linear infinite; }
+.flow-slow { animation-duration: 5.5s; }
+.node-pulse { animation: pulse 3.4s ease-in-out infinite; }
+.layer-bob { animation: bob 9s ease-in-out infinite; }
+@keyframes scrollcue { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
+@keyframes live { 0% { transform: scale(1); opacity: .6; } 100% { transform: scale(2.6); opacity: 0; } }
+
+.grain::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+  background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 96px 96px; mask-image: radial-gradient(ellipse 70% 60% at 70% 40%, #000, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 70% 40%, #000, transparent 75%); opacity: .22;
+}
+
+/* Hero headline: PT strings are ~20% longer, so scale them to keep three clean lines. */
+.h-hero { font-size: clamp(2.2rem, 1.2rem + 3.9vw, 4.2rem); }
+:lang(pt-BR) .h-hero { font-size: clamp(1.9rem, 1rem + 3vw, 3.3rem); }
+
+/* "Lifted" band: a lighter slate-blue from the same navy family, so sections alternate in tone
+   without a jump to white. Edges fade from/to the page navy, so there is no hard seam.
+   Add/remove the `theme-lift` class on a <section> to toggle it; children read the re-pointed tokens. */
+.theme-lift {
+  --bg: #14263d;
+  --bg-2: #172b45;
+  --surface: #1b3250;
+  --surface-2: #213a5b;
+  --text-2: #b0bdd0;
+  --text-3: #97a8c0;
+  --border: #2c4567;
+  background:
+    radial-gradient(55% 32% at 85% 45%, rgba(120, 169, 245, 0.07), transparent 70%),
+    linear-gradient(to bottom, var(--edge-t, #07111f) 0, #14263d clamp(6rem, 14vw, 11rem), #14263d calc(100% - clamp(6rem, 14vw, 11rem)), var(--edge-b, #07111f) 100%);
+  color: var(--text);
+}
+
+/* Hero trajectory: pointer parallax (cards read --mx/--my set on the container) + travelling light. */
+.parallax {
+  transform: translate3d(calc(var(--mx, 0) * var(--depth, 0) * -14px), calc(var(--my, 0) * var(--depth, 0) * -10px), 0);
+  transition: transform 0.5s var(--ease);
+}
+@keyframes trail { 0% { top: 0; opacity: 0; } 12% { opacity: 1; } 88% { opacity: 1; } 100% { top: calc(100% - 7px); opacity: 0; } }
+.trail-dot { animation: trail 5.5s var(--ease) infinite; }
+@media (prefers-reduced-motion: reduce) { .parallax { transform: none; } .layer-bob, .trail-dot { animation: none; } }
+
+/* Projects carousel */
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.arrow-btn {
+  display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--border); background: transparent; color: var(--text);
+  transition: border-color .25s, color .25s, opacity .25s;
+}
+.arrow-btn:hover:not(:disabled) { border-color: var(--accent-2); color: var(--accent-2); }
+.arrow-btn:disabled { opacity: .35; cursor: default; }

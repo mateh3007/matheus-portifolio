@@ -1,0 +1,254 @@
+{
+  "meta": {
+    "title": "Matheus Reis — Software Engineer | Backend, Arquitetura e IA",
+    "description": "Matheus Reis é Software Engineer com foco em sistemas backend confiáveis, arquitetura de software escalável e AI Engineering.",
+    "ogLocale": "pt_BR"
+  },
+  "a11y": {
+    "skip": "Pular para o conteúdo",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "mainNav": "Navegação principal",
+    "language": "Idioma",
+    "switchTo": "Mudar o idioma para {{language}}",
+    "scrollDown": "Rolar até a próxima seção",
+    "backToTop": "Voltar ao topo",
+    "social": "Links sociais",
+    "closeDialog": "Fechar detalhes do projeto"
+  },
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "experience": "Experiência",
+    "expertise": "Expertise",
+    "certifications": "Certificações",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "cta": "Fale comigo"
+  },
+  "hero": {
+    "label": "Software Engineer",
+    "line1": "Engenharia de sistemas.",
+    "line2": "Exploração de inteligência.",
+    "line3": "Construindo o que vem.",
+    "description": "Sou Matheus Reis, Software Engineer focado em construir sistemas backend confiáveis, projetar arquiteturas escaláveis e explorar as possibilidades da Inteligência Artificial.",
+    "primary": "Conheça meu trabalho",
+    "secondary": "Fale comigo",
+    "availability": "Disponível para novas oportunidades",
+    "scroll": "Role",
+    "pillars": [
+      "Backend",
+      "Arquitetura",
+      "IA"
+    ],
+    "companiesLabel": "Empresas em que atuei"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "statement": "Acredito que grandes softwares começam com decisões de engenharia bem pensadas.",
+    "paragraphs": [
+      "Sou Matheus Reis, Software Engineer com foco em Backend Engineering e Software Architecture.",
+      "Minha jornada na programação começou em 2021, e desde então venho construindo minha experiência no desenvolvimento de aplicações, APIs, integrações e sistemas de diferentes níveis de complexidade.",
+      "Ao longo dessa trajetória, desenvolvi um interesse especial por arquitetura de software e System Design. Gosto de entender como os sistemas funcionam por trás das interfaces, como seus componentes se comunicam e, principalmente, como projetar soluções que sejam escaláveis, resilientes e sustentáveis a longo prazo.",
+      "Acredito que desenvolver software vai muito além de escrever código. Envolve tomar boas decisões arquiteturais, compreender problemas de negócio, compartilhar conhecimento e trabalhar em conjunto para construir soluções melhores.",
+      "Também valorizo a colaboração e a liderança técnica. Gosto de participar de discussões arquiteturais, contribuir com decisões de engenharia, compartilhar experiências e ajudar equipes a evoluírem.",
+      "Atualmente, estou expandindo minha atuação para AI Engineering, aprofundando meus conhecimentos em Inteligência Artificial, Large Language Models, RAG, AI Agents e integração de sistemas inteligentes.",
+      "Vejo a convergência entre Software Engineering e Artificial Intelligence como uma oportunidade de construir a próxima geração de aplicações: sistemas inteligentes, integrados e preparados para resolver problemas cada vez mais complexos.",
+      "Meu objetivo é continuar evoluindo como engenheiro, conectando arquitetura, tecnologia e inovação para construir software que realmente faça a diferença."
+    ],
+    "path": {
+      "label": "Evolução profissional",
+      "steps": [
+        {
+          "year": "2021",
+          "title": "Início na programação",
+          "text": "Primeiras aplicações, APIs e integrações."
+        },
+        {
+          "year": "Base",
+          "title": "Backend e arquitetura",
+          "text": "Sistemas, mensageria, System Design."
+        },
+        {
+          "year": "Agora",
+          "title": "AI Engineering",
+          "text": "LLMs, RAG, agentes e MCP sobre uma base sólida de engenharia."
+        }
+      ]
+    },
+    "photoAlt": "Retrato de Matheus Reis"
+  },
+  "experience": {
+    "title": "Experiência Profissional",
+    "description": "Empresas e times dos quais fiz parte ao longo da minha jornada em engenharia.",
+    "current": "Atual",
+    "contextLabel": "Contexto"
+  },
+  "expertise": {
+    "title": "Tecnologias e Expertise",
+    "description": "Tecnologias, ferramentas e disciplinas de engenharia que exploro para projetar, construir e evoluir sistemas de software.",
+    "note": "Agrupado por tipo. Não é um ranking de proficiência.",
+    "kinds": {
+      "language": "Linguagens",
+      "framework": "Frameworks",
+      "platform": "Ferramentas e plataformas",
+      "concept": "Conceitos e padrões",
+      "discipline": "Disciplinas"
+    },
+    "categories": {
+      "backend": {
+        "title": "Backend Engineering",
+        "summary": "A base: serviços, APIs e integrações construídos para serem confiáveis."
+      },
+      "ai": {
+        "title": "AI Engineering",
+        "summary": "Uma expansão ativa, construída sobre fundamentos sólidos de software."
+      },
+      "architecture": {
+        "title": "Arquitetura de Software",
+        "summary": "Decisões que mantêm sistemas escaláveis, resilientes e sustentáveis."
+      },
+      "cloud": {
+        "title": "Cloud e DevOps",
+        "summary": "Entregar e operar software de forma repetível."
+      },
+      "data": {
+        "title": "Dados e Mensageria",
+        "summary": "Armazenar, mover e processar dados entre serviços."
+      },
+      "quality": {
+        "title": "Qualidade e Segurança de Software",
+        "summary": "Confiança no que roda em produção."
+      }
+    }
+  },
+  "certifications": {
+    "title": "Certificações e Aprendizado Contínuo",
+    "description": "Aprender continuamente faz parte da minha forma de fazer engenharia.",
+    "issuedBy": "Emitido por {{issuer}}",
+    "credentialId": "ID da credencial",
+    "verify": "Verificar credencial",
+    "completed": "Concluídas",
+    "inProgress": "Em andamento",
+    "hours": "{{count}}h",
+    "items": {
+      "ufrn": {
+        "name": "Engenharia da Computação",
+        "issuer": "UFRN · Graduação"
+      }
+    }
+  },
+  "projects": {
+    "title": "Trabalhos Selecionados",
+    "description": "Uma seleção de projetos de engenharia, desafios técnicos e sistemas dos quais participei.",
+    "viewCase": "Ver estudo de caso",
+    "kinds": {
+      "professional": "Profissional",
+      "personal": "Pessoal",
+      "experimental": "Experimental"
+    },
+    "confidential": "Os detalhes se limitam ao que pode ser divulgado publicamente.",
+    "fields": {
+      "context": "Contexto",
+      "focus": "Foco de engenharia",
+      "technologies": "Tecnologias",
+      "contribution": "Contribuição",
+      "results": "Resultados",
+      "problem": "Problema",
+      "challenge": "Desafio",
+      "approach": "Abordagem",
+      "decisions": "Decisões de arquitetura"
+    },
+    "pending": "Um estudo de caso detalhado está em preparação. Os detalhes serão publicados apenas onde puderem ser compartilhados publicamente.",
+    "repo": "Repositório",
+    "live": "Site no ar",
+    "items": {
+      "cxbloom": {
+        "name": "CX Bloom",
+        "org": "Loomi",
+        "summary": "Plataforma omnichannel de atendimento com IA, na qual sou responsável pela arquitetura e direção técnica.",
+        "context": "O Bloom CX é uma plataforma de atendimento que centraliza WhatsApp, e-mail, telefone e chat em um só lugar e aplica IA às operações de suporte, com recursos como histórico do cliente, priorização por contexto e urgência, tickets automáticos e monitoramento em tempo real. Atende empresas com operações de atendimento robustas, em setores como e-commerce, telecom, saúde e finanças.",
+        "focus": [
+          "Arquitetura backend",
+          "Event-Driven Architecture",
+          "Clean Architecture",
+          "Comunicação omnichannel",
+          "Comunicação em tempo real",
+          "Funcionalidades com IA"
+        ],
+        "decisions": "Event-Driven Architecture combinada com Clean Architecture, para manter o produto manutenível e seus componentes desacoplados conforme canais e funcionalidades crescem.",
+        "contribution": "Lidero as decisões arquiteturais e atuo como referência técnica do produto, com total responsabilidade pela arquitetura e pelo direcionamento técnico. Projetei e desenvolvi a plataforma de comunicação omnichannel que unifica múltiplos canais em uma solução única e implementei comunicação em tempo real com WebSockets, com foco em baixa latência, confiabilidade e performance."
+      },
+      "portoseguro": {
+        "name": "Porto Seguro",
+        "org": "VILT",
+        "summary": "APIs e microsserviços escaláveis para uma plataforma de seguros de alta demanda, com mensageria assíncrona e serverless.",
+        "context": "A Porto Seguro é um grupo segurador brasileiro que oferece seguros de auto, residência, vida, saúde e viagem, além de produtos bancários e de consórcio. Atuei nessa conta pela VILT, começando pelo projeto Insper e depois com foco em desenvolvimento backend para a Porto Seguro.",
+        "focus": [
+          "APIs backend",
+          "Microsserviços",
+          "Comunicação assíncrona",
+          "System design",
+          "Serverless",
+          "Confiabilidade e observabilidade"
+        ],
+        "decisions": "Design de sistemas e decisões arquiteturais voltadas à escalabilidade, resiliência e manutenibilidade de longo prazo. RabbitMQ para comunicação assíncrona, que aumenta o desacoplamento e a confiabilidade entre serviços, e Clean Architecture com SOLID aplicados de forma consistente para padronizar os serviços.",
+        "contribution": "Desde a concepção do projeto Insper contribuí tanto no backend quanto no frontend, com AEM e Java. Depois passei a focar em desenvolvimento backend para a Porto Seguro, projetando APIs e microsserviços escaláveis em Node.js para sistemas de alta demanda. Também atuei em performance e escalabilidade com cache, monitoramento, segurança e alta disponibilidade, e implementei uma arquitetura serverless com AWS Lambda."
+      },
+      "nexus": {
+        "name": "ALE Santa Catarina",
+        "org": "Nexus",
+        "summary": "Microsserviço central de cursos e controle de acesso em uma plataforma educacional usada por grandes instituições.",
+        "context": "A Ale é uma plataforma educacional para escolas e infoprodutores, com app do aluno, aulas ao vivo e gravadas, salas virtuais, simulados e relatórios de gestão. O site público informa mais de 500 instituições atendidas. Atuei nela pela Nexus, atendendo instituições de grande porte como o COC Santa Catarina.",
+        "focus": [
+          "Engenharia backend",
+          "Microsserviços",
+          "Controle de acesso",
+          "Armazenamento em nuvem",
+          "Data streams",
+          "Arquitetura modular"
+        ],
+        "decisions": "Arquitetura modular e escalável em NestJS e TypeScript, aplicando princípios SOLID e boas práticas de engenharia.",
+        "contribution": "Projetei e implementei o microsserviço central responsável pela estrutura de cursos e pelo controle de acesso de usuários, buscando confiabilidade e escalabilidade. Utilizei AWS S3 para armazenamento de arquivos eficiente e seguro, com suporte a alto volume de conteúdo, e implementei data streams de alta performance para processamento eficiente conforme a base de usuários cresce."
+      }
+    },
+    "prev": "Projetos anteriores",
+    "next": "Próximos projetos",
+    "listLabel": "Projetos"
+  },
+  "contact": {
+    "title": "Vamos construir algo relevante.",
+    "description": "Tenho sempre interesse em conversar com quem trabalha em produtos desafiadores, sistemas escaláveis e problemas de engenharia relevantes.",
+    "email": "E-mail",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "cta": "Envie um e-mail",
+    "emptyState": "Os dados de contato estão sendo finalizados. Enquanto isso, você pode me encontrar no GitHub.",
+    "form": {
+      "name": "Seu nome",
+      "email": "Seu e-mail",
+      "message": "Mensagem",
+      "send": "Enviar mensagem",
+      "sending": "Preparando…",
+      "success": "Seu aplicativo de e-mail deve abrir com a mensagem pronta para envio. Se não abrir, escreva para {{email}}.",
+      "error": "Algo deu errado. Escreva diretamente para {{email}}.",
+      "note": "Isso abre seu aplicativo de e-mail com a mensagem preenchida.",
+      "subject": "Contato pelo portfólio — {{name}}",
+      "validation": {
+        "nameRequired": "Informe seu nome.",
+        "emailRequired": "Informe seu e-mail.",
+        "emailInvalid": "Informe um e-mail válido.",
+        "messageRequired": "Escreva uma mensagem.",
+        "messageShort": "A mensagem deve ter pelo menos 10 caracteres."
+      }
+    }
+  },
+  "footer": {
+    "role": "Software Engineer",
+    "rights": "Todos os direitos reservados.",
+    "built": "Projetado e desenvolvido por Matheus Reis."
+  },
+  "resume": {
+    "download": "Baixar currículo"
+  }
+}

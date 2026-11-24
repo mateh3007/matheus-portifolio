@@ -1,0 +1,254 @@
+{
+  "meta": {
+    "title": "Matheus Reis — Software Engineer | Backend, Architecture & AI",
+    "description": "Matheus Reis is a Software Engineer focused on reliable backend systems, scalable software architecture and AI engineering.",
+    "ogLocale": "en_US"
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNav": "Main navigation",
+    "language": "Language",
+    "switchTo": "Switch language to {{language}}",
+    "scrollDown": "Scroll to the next section",
+    "backToTop": "Back to top",
+    "social": "Social links",
+    "closeDialog": "Close project details"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "expertise": "Expertise",
+    "certifications": "Certifications",
+    "projects": "Projects",
+    "contact": "Contact",
+    "cta": "Get in touch"
+  },
+  "hero": {
+    "label": "Software Engineer",
+    "line1": "Engineering systems.",
+    "line2": "Exploring intelligence.",
+    "line3": "Building what's next.",
+    "description": "I'm Matheus Reis, a Software Engineer focused on building reliable backend systems, designing scalable architectures, and exploring the possibilities of Artificial Intelligence.",
+    "primary": "Explore my work",
+    "secondary": "Get in touch",
+    "availability": "Available for new opportunities",
+    "scroll": "Scroll",
+    "pillars": [
+      "Backend",
+      "Architecture",
+      "AI"
+    ],
+    "companiesLabel": "Companies I have worked with"
+  },
+  "about": {
+    "title": "About Me",
+    "statement": "I believe great software starts with thoughtful engineering decisions.",
+    "paragraphs": [
+      "I'm Matheus Reis, a Software Engineer focused on Backend Engineering and Software Architecture.",
+      "My journey in programming started in 2021. Since then I've been building applications, APIs, integrations and systems of varying complexity.",
+      "Along the way I developed a particular interest in software architecture and System Design. I like understanding how systems work behind the interfaces, how their components communicate and, above all, how to design solutions that are scalable, resilient and sustainable in the long run.",
+      "I believe building software goes well beyond writing code. It means making sound architectural decisions, understanding business problems, sharing knowledge and working together to build better solutions.",
+      "I also value collaboration and technical leadership. I enjoy taking part in architectural discussions, contributing to engineering decisions, sharing experience and helping teams grow.",
+      "I'm currently expanding into AI Engineering, deepening my knowledge of Artificial Intelligence, Large Language Models, RAG, AI Agents and the integration of intelligent systems.",
+      "I see the convergence of Software Engineering and Artificial Intelligence as a chance to build the next generation of applications: intelligent, integrated systems prepared to solve increasingly complex problems.",
+      "My goal is to keep growing as an engineer, connecting architecture, technology and innovation to build software that truly makes a difference."
+    ],
+    "path": {
+      "label": "Career progression",
+      "steps": [
+        {
+          "year": "2021",
+          "title": "Started programming",
+          "text": "First applications, APIs and integrations."
+        },
+        {
+          "year": "Foundation",
+          "title": "Backend & architecture",
+          "text": "Systems, messaging, System Design."
+        },
+        {
+          "year": "Now",
+          "title": "AI Engineering",
+          "text": "LLMs, RAG, agents and MCP on top of solid engineering."
+        }
+      ]
+    },
+    "photoAlt": "Portrait of Matheus Reis"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "description": "Companies and teams I've been part of throughout my engineering journey.",
+    "current": "Current",
+    "contextLabel": "Context"
+  },
+  "expertise": {
+    "title": "Technologies & Expertise",
+    "description": "Technologies, tools, and engineering disciplines I explore to design, build, and evolve software systems.",
+    "note": "Grouped by type. Not a proficiency ranking.",
+    "kinds": {
+      "language": "Languages",
+      "framework": "Frameworks",
+      "platform": "Tools & platforms",
+      "concept": "Concepts & patterns",
+      "discipline": "Disciplines"
+    },
+    "categories": {
+      "backend": {
+        "title": "Backend Engineering",
+        "summary": "The foundation: services, APIs and integrations built to be reliable."
+      },
+      "ai": {
+        "title": "AI Engineering",
+        "summary": "An active expansion, built on top of solid software foundations."
+      },
+      "architecture": {
+        "title": "Software Architecture",
+        "summary": "Decisions that keep systems scalable, resilient and maintainable."
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "summary": "Shipping and operating software repeatably."
+      },
+      "data": {
+        "title": "Data & Messaging",
+        "summary": "Storing, moving and processing data between services."
+      },
+      "quality": {
+        "title": "Software Quality & Security",
+        "summary": "Confidence in what runs in production."
+      }
+    }
+  },
+  "certifications": {
+    "title": "Certifications & Continuous Learning",
+    "description": "Continuous learning is part of how I approach engineering.",
+    "issuedBy": "Issued by {{issuer}}",
+    "credentialId": "Credential ID",
+    "verify": "Verify credential",
+    "completed": "Completed",
+    "inProgress": "In progress",
+    "hours": "{{count}}h",
+    "items": {
+      "ufrn": {
+        "name": "Computer Engineering",
+        "issuer": "UFRN · Bachelor's degree"
+      }
+    }
+  },
+  "projects": {
+    "title": "Selected Work",
+    "description": "A selection of engineering projects, technical challenges, and systems I've contributed to.",
+    "viewCase": "View case study",
+    "kinds": {
+      "professional": "Professional",
+      "personal": "Personal",
+      "experimental": "Experimental"
+    },
+    "confidential": "Details are limited to what can be publicly disclosed.",
+    "fields": {
+      "context": "Context",
+      "focus": "Engineering focus",
+      "technologies": "Technologies",
+      "contribution": "Contribution",
+      "results": "Results",
+      "problem": "Problem",
+      "challenge": "Challenge",
+      "approach": "Approach",
+      "decisions": "Architecture decisions"
+    },
+    "pending": "A detailed case study is being prepared. Specifics will be published only where they can be shared publicly.",
+    "repo": "Repository",
+    "live": "Live site",
+    "items": {
+      "cxbloom": {
+        "name": "CX Bloom",
+        "org": "Loomi",
+        "summary": "Omnichannel customer-service platform with AI, where I own the architecture and technical direction.",
+        "context": "Bloom CX is a customer-service platform that centralizes WhatsApp, email, phone and chat in one place and applies AI to support operations, with features such as customer history, prioritization by context and urgency, automatic tickets and real-time monitoring. It serves businesses with large support operations, in sectors such as e-commerce, telecom, healthcare and finance.",
+        "focus": [
+          "Backend architecture",
+          "Event-Driven Architecture",
+          "Clean Architecture",
+          "Omnichannel communication",
+          "Real-time communication",
+          "AI-powered features"
+        ],
+        "decisions": "Event-Driven Architecture combined with Clean Architecture, to keep the product maintainable and its components decoupled as channels and features grow.",
+        "contribution": "I lead the architectural decisions and act as the technical reference for the product, with full responsibility for its architecture and technical direction. I designed and built the omnichannel communication platform that unifies multiple channels in a single solution, and implemented real-time communication with WebSockets, focused on low latency, reliability and performance."
+      },
+      "portoseguro": {
+        "name": "Porto Seguro",
+        "org": "VILT",
+        "summary": "Scalable APIs and microservices for a high-demand insurance platform, with asynchronous messaging and serverless.",
+        "context": "Porto Seguro is a Brazilian insurance group offering auto, home, life, health and travel insurance, plus banking and consortium products. I worked on this account through VILT, starting with the Insper project and later focusing on backend development for Porto Seguro.",
+        "focus": [
+          "Backend APIs",
+          "Microservices",
+          "Asynchronous communication",
+          "System design",
+          "Serverless",
+          "Reliability and observability"
+        ],
+        "decisions": "System design and architectural decisions aimed at scalability, resilience and long-term maintainability. RabbitMQ for asynchronous communication, which increases decoupling and reliability between services, and Clean Architecture with SOLID applied consistently to standardize the services.",
+        "contribution": "From the conception of the Insper project I contributed to both backend and frontend, using AEM and Java. I then focused on backend development for Porto Seguro, designing scalable APIs and microservices in Node.js for high-demand systems. I also worked on performance and scalability through caching, monitoring, security and high availability, and implemented a serverless architecture with AWS Lambda."
+      },
+      "nexus": {
+        "name": "ALE Santa Catarina",
+        "org": "Nexus",
+        "summary": "Core microservice for courses and access control on an education platform used by large institutions.",
+        "context": "Ale is an education platform for schools and course sellers, with a student app, live and recorded classes, virtual classrooms, mock exams and management reports. Its public site lists more than 500 institutions served. I worked on it through Nexus, serving large institutions such as COC Santa Catarina.",
+        "focus": [
+          "Backend engineering",
+          "Microservices",
+          "Access control",
+          "Cloud storage",
+          "Data streams",
+          "Modular architecture"
+        ],
+        "decisions": "A modular, scalable architecture in NestJS and TypeScript, applying SOLID principles and good engineering practices.",
+        "contribution": "I designed and implemented the core microservice responsible for the course structure and for user access control, aiming at reliability and scalability. I used AWS S3 for efficient, secure file storage supporting a high volume of content, and implemented high-performance data streams for efficient processing as the user base grows."
+      }
+    },
+    "prev": "Previous projects",
+    "next": "Next projects",
+    "listLabel": "Projects"
+  },
+  "contact": {
+    "title": "Let's build something meaningful.",
+    "description": "I'm always interested in connecting with people working on challenging products, scalable systems, and meaningful engineering problems.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "cta": "Send me an email",
+    "emptyState": "Contact details are being finalised. In the meantime, you can find me on GitHub.",
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Message",
+      "send": "Send message",
+      "sending": "Preparing…",
+      "success": "Your email app should open with the message ready to send. If it doesn't, write to {{email}}.",
+      "error": "Something went wrong. Please write to {{email}} directly.",
+      "note": "This opens your email app with the message prefilled.",
+      "subject": "Portfolio contact from {{name}}",
+      "validation": {
+        "nameRequired": "Please enter your name.",
+        "emailRequired": "Please enter your email.",
+        "emailInvalid": "Please enter a valid email address.",
+        "messageRequired": "Please write a message.",
+        "messageShort": "Your message should have at least 10 characters."
+      }
+    }
+  },
+  "footer": {
+    "role": "Software Engineer",
+    "rights": "All rights reserved.",
+    "built": "Designed and built by Matheus Reis."
+  },
+  "resume": {
+    "download": "Download CV"
+  }
+}
